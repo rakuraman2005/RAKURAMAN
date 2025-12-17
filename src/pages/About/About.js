@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css'
-
+import Education from './Education'
+import Skills from './Skills'
 const About = () => {
   return (
     <section className='about-section'>
@@ -8,11 +9,12 @@ const About = () => {
          <div className='about-education '>
              <h1>Education</h1>
              <div className="edu-details">
-                
+                    <Education />
              </div>
          </div>
          <div className='about-skills'>
           <h1>Skills</h1>
+          <Skills/>
          </div>
          <div className='about-hobbies'>
           <h1>Hobbies</h1>

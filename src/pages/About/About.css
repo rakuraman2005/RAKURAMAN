@@ -11,6 +11,8 @@
 .edu-details
 {
     
+    justify-content: space-between;
+    grid-template-columns: repeat(2,100px);
 }
 
 @media screen and (max-width:1050px) {
