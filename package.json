@@ -1,5 +1,5 @@
 {
-  "homepage": "https://rakuraman2005.github.io/REACTPORTFOLIO",
+  "homepage": "https://rakuraman2005.github.io/RAKURAMAN",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,7 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "client": "file:",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-fast-marquee": "^1.6.5",
@@ -22,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/rakuraman2005/REACTPORTFOLIO.git",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -48,7 +49,6 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "gh": "^2.8.9",
-    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.7"
   }
