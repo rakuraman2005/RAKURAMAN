@@ -11,6 +11,11 @@ const Skills = () => {
       category: "Digital Design",
       skills: ["RTL Design", "Verilog/VHDL", "FPGA", "SystemVerilog"],
       color: "#FFD700" // Your Portfolio Yellow
+    },
+    {
+      category: "Programming & Development",
+      skills: ["Java", "C++", "Data structures", "Algorithms", "OOPS"],
+      color: "#17b717ff" // Your Portfolio Yellow
     }
   ];
 
@@ -39,7 +44,7 @@ const Skills = () => {
 const styles = {
   container: {
     padding: '20px',
-    maxWidth: '800px',
+    maxWidth: '100%',
   },
   grid: {
     display: 'grid',

@@ -48,32 +48,37 @@ const styles = {
   },
   card: {
     borderLeft: '4px solid #FFD700', // Yellow accent to match your "A"
-    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
     padding: '1.5rem',
     marginBottom: '20px',
     borderRadius: '0 8px 8px 0',
   },
   institution: {
     margin: '0 0 5px 0',
-    fontSize: '1.4rem',
+    fontSize: '100%',
     color: '#FFD700',
+    backgroundColor: 'transparent',
   },
   degree: {
     margin: '0 0 15px 0',
     fontStyle: 'italic',
     color: '#ccc',
+    backgroundColor: 'transparent',
   },
   footer: {
     display: 'flex',
     justifyContent: 'space-between',
-    fontSize: '0.9rem',
+    fontSize: '50%',
     fontWeight: 'bold',
+    backgroundColor: 'transparent',
   },
   year: {
-    color: '#888',
+    color: '#b4ababff',
+    backgroundColor: 'transparent',
   },
   grade: {
     color: '#fff',
+    backgroundColor: 'transparent',
   }
 };
 

@@ -2,6 +2,7 @@ import React from 'react'
 import './About.css'
 import Education from './Education'
 import Skills from './Skills'
+import Hobbies from './Hobbies'
 const About = () => {
   return (
     <section className='about-section'>
@@ -17,14 +18,15 @@ const About = () => {
           <Skills/>
          </div>
          <div className='about-hobbies'>
-          <h1>Hobbies</h1>
+          
+          <Hobbies/>
          </div>
-         <div className='about-languages'>
+         {/* <div className='about-languages'>
           <h1>Languages</h1>
          </div>
          <div className='about-weblinks'>
            <h1>Other Profiles</h1>
-         </div>
+         </div> */}
 
 
     </section>
