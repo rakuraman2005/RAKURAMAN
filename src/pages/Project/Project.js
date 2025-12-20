@@ -6,19 +6,19 @@ const Project = () => {
     {
       title: "Smart Gas Leakage System",
       description: "IoT based gas leakage detection using Arduino, sensors & web dashboard.",
-      image: "/project images/skills.png",
+      image: "./project-images/skills.png",
       source: "https://github.com/rakuraman2005"
     },
     {
       title: "Flood Monitoring System",
       description: "ESP8266 based flood monitoring with GPS & mobile alerts.",
-      image: "/project images/skills.png",
+      image: "/project-images/skills.png",
       source: "#"
     },
     {
       title: "AI Wearable Safety Device",
       description: "Women safety wearable with health monitoring & AI alert system.",
-      image: "/project images/skills.png",
+      image: "skills.png",
       source: "#"
     }
   ];
@@ -53,6 +53,7 @@ const styles = {
     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
     gap: "40px",
     justifyContent: "center",
+   zIndex: "-1", 
   }
 };
 

@@ -39,17 +39,20 @@ const Projectcard = ({ title, description, image, source }) => {
 
 const styles = {
   card: {
-    backdropFilter: "blur(12px)",
+    
+   backdropFilter: "blur(12px)",
     background: "rgba(255, 255, 255, 0.12)",
     borderRadius: "16px",
     padding: "20px",
     textAlign: "center",
     transition: "all 0.4s ease",
-    border: "1px solid rgba(255,255,255,0.25)"
+    border: "1px solid rgba(255,255,255,0.25)",
+    zIndex: "0",
   },
   image: {
     width: "100%",
     height: "180px",
+    aspectRatio : "16/9",
     objectFit: "cover",
     borderRadius: "12px",
     marginBottom: "15px",
