@@ -1,23 +1,59 @@
-import React from 'react'
-import './Project.css'
-import Projectcard from './Projectcard'
+
+import Projectcard from "./Projectcard";
 
 const Project = () => {
-  return (
-    <>
-    <div>
-      <h1 className='project-name'><span>P</span>rojects</h1>
-      <div className='project-container'>
-      <Projectcard path='./project images/skills.png' title='smart gas system' description='arduino c++ java html css and all components used' source='https://github.com/rakuraman2005' live='null'/>
-      <Projectcard path='./project images/skills.png' title='smart gas system' description='arduino c++ java html css and all components used' source='' live=''/>
-      <Projectcard path='./project images/skills.png' title='smart gas system' description='arduino c++ java html css and all components used' source='' live=''/>
-      <Projectcard path='./project images/skills.png' title='smart gas system' description='arduino c++ java html css and all components used' source='' live=''/>
-      <Projectcard path='./project images/skills.png' title='smart gas system' description='arduino c++ java html css and all components used' source='' live=''/>
-      <Projectcard path='./project images/skills.png' title='smart gas system' description='arduino c++ java html css and all components used' source='' live=''/>
-      </div>
-      </div>
-    </>
-  )
-}
+  const projects = [
+    {
+      title: "Smart Gas Leakage System",
+      description: "IoT based gas leakage detection using Arduino, sensors & web dashboard.",
+      image: "/project images/skills.png",
+      source: "https://github.com/rakuraman2005"
+    },
+    {
+      title: "Flood Monitoring System",
+      description: "ESP8266 based flood monitoring with GPS & mobile alerts.",
+      image: "/project images/skills.png",
+      source: "#"
+    },
+    {
+      title: "AI Wearable Safety Device",
+      description: "Women safety wearable with health monitoring & AI alert system.",
+      image: "/project images/skills.png",
+      source: "#"
+    }
+  ];
 
-export default Project
+  return (
+    <section style={styles.section}>
+      <h1 style={styles.heading}>
+        <span style={{ color: "#FFD700" }}>P</span>rojects
+      </h1>
+
+      <div style={styles.grid}>
+        {projects.map((project, index) => (
+          <Projectcard key={index} {...project} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+const styles = {
+  section: {
+    width: "100%",
+    padding: "40px 20px",
+  },
+  heading: {
+    textAlign: "center",
+    fontSize: "2.5rem",
+    marginBottom: "40px",
+  },
+  grid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+    gap: "40px",
+    justifyContent: "center",
+  }
+};
+
+export default Project;
