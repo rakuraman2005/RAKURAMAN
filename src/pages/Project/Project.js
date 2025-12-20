@@ -12,14 +12,20 @@ const Project = () => {
     {
       title: "Flood Monitoring System",
       description: "ESP8266 based flood monitoring with GPS & mobile alerts.",
-      image: "/project-images/skills.png",
+      image: "./project-images/skills.png",
       source: "#"
     },
     {
       title: "AI Wearable Safety Device",
       description: "Women safety wearable with health monitoring & AI alert system.",
-      image: "skills.png",
+      image: "./project-images/skills.png",
       source: "#"
+    },
+    {
+      title: "AI Wearable Safety Device",
+      description: "Women safety wearable with health monitoring & AI alert system.",
+      image: "./project-images/skills.png",
+      source: "https://rakuraman2005.github.io/mernstack-bakery"
     }
   ];
 
